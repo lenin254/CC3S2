@@ -1,5 +1,15 @@
-# CC3S2  
+# CC3S2
+### PARTE 1  
 Utilizare el codigo de la acividad de myrottenpotatoes  
 Se siguio la guia con sus buenas practicas Maintainnable, extensible y readable.  
-- **Jerarquia de Excepciones:** Nos ayudo a tener primero una jerarquia para organizar las excepciones y manejar los errores.
-- **Never rescue more exceptions than you need to:** Aqui 
+Se siguio la guia con los puntos  
+- **Always create your own hierarchy ApplicationError** 
+- **Never rescue Exception** 
+- **Never more exceptions than you need torescue**
+- **Resist the urge to handle exceptions immediately**
+- **Not all exceptions need handling**
+Luego de leer el articulo (https://codedamn.com/news/javascript/error-handling-debugging) procedo a responder la pregunta planteada  
+**¿Que diferencias encuentras con lo indicado?**  
+La principal diferencia que encuentro es que el articulo de Java Script (JS) habla adicional de debugging mientras que el otro articulo que toma como lenguaje para sus ejemplos a ruby (rb) solo lo menciona en el **Never Rescue Exception** porque la mala practica puede ofuscar el Debugging.  
+Otra diferencia que encontre fue que en el artuclo de JS no menciona ninguna gerarquia, al contrario que el de ruby que comienza el articulo con eso porque tiene muchos beneficios mostrnado incluso la estructura de jerarquia en un grafico.  
+### PARTE 2  

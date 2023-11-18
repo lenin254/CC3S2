@@ -11,4 +11,11 @@ class ApplicationController < ActionController::Base
         @current_user ||= Moviegoer.where(:id => session[:user_id])
         redirect_to login_path and return unless @current_user
     end
+    rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity
+
+    def render_unprocessable_entity(e)
+        render \
+            json: { errors: e.record.errors },
+            status: 422
+    end
 end
